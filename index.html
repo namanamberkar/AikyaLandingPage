@@ -16,18 +16,16 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
-<body class="luxury-cursor-enabled">
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
+<body>
     <nav class="navbar">
         <div class="logo brand-font">
-            <!-- Space for logo image if needed: <img src="images/logo1.png" alt="Aikya Logo" style="height: 40px;"> -->
+            <img src="logo.png" alt="Aikya Logo" class="brand-logo">
             AIKYA<span>APARTMENTS</span>
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#attractions">Nearby Gems</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -123,6 +121,94 @@
             </div>
         </div>
     </section>
+
+    <section id="gallery" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Property <span>Gallery</span></h2>
+            <p class="section-subtitle">Take a tour of our luxurious and comfortable properties located in prime areas
+                of Mangaluru.</p>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Aikya 1BHK -->
+                <div class="gallery-card" data-property="Aikya 1BHK">
+                    <img src="Property Photos/Aikya 1BHK/1.jpg" alt="Aikya 1BHK" loading="lazy">
+                    <div class="card-backdrop">
+                        <h3>Aikya 1BHK</h3>
+                        <p>12 Photos</p>
+                    </div>
+                </div>
+
+                <!-- Aikya 2BHK -->
+                <div class="gallery-card" data-property="Aikya 2BHK">
+                    <img src="Property Photos/Aikya 2BHK/0J6A4811.jpg" alt="Aikya 2BHK" loading="lazy">
+                    <div class="card-backdrop">
+                        <h3>Aikya 2BHK</h3>
+                        <p>18 Photos</p>
+                    </div>
+                </div>
+
+                <!-- Falnir -->
+                <div class="gallery-card" data-property="Falnir">
+                    <img src="Property Photos/Falnir/IMG-20250207-WA0022.jpg" alt="Falnir" loading="lazy">
+                    <div class="card-backdrop">
+                        <h3>Falnir</h3>
+                        <p>26 Photos</p>
+                    </div>
+                </div>
+
+                <!-- Kadri 1BHK -->
+                <div class="gallery-card" data-property="Kadri 1BHK">
+                    <img src="Property Photos/Kadri 1BHK/IMG-20230130-WA0017.jpg" alt="Kadri 1BHK" loading="lazy">
+                    <div class="card-backdrop">
+                        <h3>Kadri 1BHK</h3>
+                        <p>14 Photos</p>
+                    </div>
+                </div>
+
+                <!-- Kadri 3BHK -->
+                <div class="gallery-card" data-property="Kadri 3BHK">
+                    <img src="Property Photos/Kadri 3BHK/IMG-20250601-WA0000.jpg" alt="Kadri 3BHK" loading="lazy">
+                    <div class="card-backdrop">
+                        <h3>Kadri 3BHK</h3>
+                        <p>29 Photos</p>
+                    </div>
+                </div>
+
+                <!-- Kadri Villa 2Bhk -->
+                <div class="gallery-card" data-property="Kadri Villa 2Bhk">
+                    <img src="Property Photos/Kadri Villa 2Bhk/IMG-20221219-WA0003.jpg" alt="Kadri Villa"
+                        loading="lazy">
+                    <div class="card-backdrop">
+                        <h3>Kadri Villa</h3>
+                        <p>21 Photos</p>
+                    </div>
+                </div>
+
+                <!-- Palace 2BHK -->
+                <div class="gallery-card" data-property="Palace 2BHK">
+                    <img src="Property Photos/Palace 2BHK/IMG-20250417-WA0002.jpg" alt="Palace 2BHK" loading="lazy">
+                    <div class="card-backdrop">
+                        <h3>Palace 2BHK</h3>
+                        <p>17 Photos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="Property fullscreen">
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxCounter">1 / 10</p>
+            </div>
+            <button class="lightbox-prev"><i data-lucide="chevron-left"></i></button>
+            <button class="lightbox-next"><i data-lucide="chevron-right"></i></button>
+        </div>
+    </div>
 
     <section id="attractions" class="section">
         <div class="container">
