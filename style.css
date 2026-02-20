@@ -164,11 +164,14 @@ h4,
     background: transparent;
     color: var(--text-main);
     padding: 14px 35px;
-    border: 2px solid var(--text-main);
+    border: 2.5px solid var(--text-main);
     border-radius: 50px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     transition: var(--transition);
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
 }
 
 .btn-secondary:hover {
@@ -693,13 +696,12 @@ h4,
 
     .hero-badge {
         position: relative;
-        bottom: 0;
-        left: 0;
         margin: 0 auto;
         width: fit-content;
         padding: 8px 15px;
         font-size: 0.75rem;
-        transform: translateY(-20px);
+        transform: none;
+        margin-bottom: -10px;
     }
 
     .hero-btns {
@@ -710,8 +712,10 @@ h4,
     .btn-primary,
     .btn-secondary {
         width: 100%;
-        padding: 18px;
+        padding: 16px;
         text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
     }
 
     .section {
