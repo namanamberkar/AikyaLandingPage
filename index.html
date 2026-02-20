@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aikya Service Apartments | Luxury Living in Mangaluru</title>
+    <meta name="description"
+        content="Feel of your home in our home. Premium service apartments in Bejai, Mangaluru near Kadri Park.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="luxury-cursor-enabled">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <nav class="navbar">
+        <div class="logo brand-font">
+            <!-- Space for logo image if needed: <img src="images/logo1.png" alt="Aikya Logo" style="height: 40px;"> -->
+            AIKYA<span>APARTMENTS</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#attractions">Nearby Gems</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-btns">
+            <button class="btn-primary open-booking">Book Now</button>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-label fade-in"
+                style="color: var(--primary-accent); font-weight: 700; margin-bottom: 20px;">★ "Feel of your home in our
+                home"</div>
+            <h1 class="fade-in brand-font">Welcome to <span>Aikya</span></h1>
+            <p class="fade-in">Located in Mangaluru, surrounded by natural light and breeze. Minutes from Kadri Park and
+                major landmarks.</p>
+            <div class="hero-btns fade-in">
+                <button class="btn-primary magnetic open-booking">Book Your Stay</button>
+                <a href="#attractions" class="btn-secondary magnetic">Explore Nearby</a>
+            </div>
+        </div>
+        <div class="hero-img-container fade-in">
+            <div class="hero-img-main"
+                style="background-image: url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1200')">
+            </div>
+            <div class="hero-badge">
+                <i data-lucide="shield-check" style="color: var(--primary-accent)"></i>
+                <span>Trusted by <br><b>1000+ Guests</b></span>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Why <span>Aikya?</span></h2>
+            <p class="section-subtitle">We would like to introduce ourselves not as Hoteliers but as Home Makers trying
+                to make your stay memorable.</p>
+
+            <div class="facility-grid">
+                <div class="facility-item">
+                    <i data-lucide="wifi" size="32"></i>
+                    <h4>Free WiFi</h4>
+                </div>
+                <div class="facility-item">
+                    <i data-lucide="car" size="32"></i>
+                    <h4>Free Parking</h4>
+                </div>
+                <div class="facility-item">
+                    <i data-lucide="users" size="32"></i>
+                    <h4>Family Rooms</h4>
+                </div>
+                <div class="facility-item">
+                    <i data-lucide="utensils" size="32"></i>
+                    <h4>Full Kitchen</h4>
+                </div>
+                <div class="facility-item">
+                    <i data-lucide="tv" size="32"></i>
+                    <h4>Smart TV</h4>
+                </div>
+                <div class="facility-item">
+                    <i data-lucide="wind" size="32"></i>
+                    <h4>AC Rooms</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rules" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">House <span>Rules</span></h2>
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <h4><i data-lucide="users"></i> Visitors</h4>
+                    <p>No visitors after 10:00 PM. Visitors must be accompanied by registered guests.</p>
+                </div>
+                <div class="rule-card">
+                    <h4><i data-lucide="cigarette-off"></i> No Smoking</h4>
+                    <p>Smoking is strictly prohibited inside. Designated area available on terrace.</p>
+                </div>
+                <div class="rule-card">
+                    <h4><i data-lucide="clock"></i> Check-in/Out</h4>
+                    <p>Checkout time is 11:00 AM. Late fees apply after 12:30 PM.</p>
+                </div>
+                <div class="rule-card">
+                    <h4><i data-lucide="ban"></i> Restrictions</h4>
+                    <p>We do not entertain unmarried couples. Main gate must be closed at all times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="attractions" class="section">
+        <div class="container">
+            <h2 class="section-title">Nearby <span>Gems</span></h2>
+            <p class="section-subtitle">Experience the local charm of Mangaluru, with beaches, temples, and markets just
+                minutes away.</p>
+
+            <div class="attractions-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="beaches">Beaches</button>
+                <button class="filter-btn" data-filter="temples">Temples</button>
+                <button class="filter-btn" data-filter="transit">Transit</button>
+                <button class="filter-btn" data-filter="markets">Markets</button>
+            </div>
+
+            <div class="attractions-grid" id="attractionsGrid">
+                <!-- Beaches -->
+                <div class="attraction-card beaches" data-category="beaches">
+                    <div class="attraction-img">
+                        <img src="assets/Beach/Panambur.jpg" alt="Panambur Beach" loading="lazy">
+                    </div>
+                    <div class="attraction-info">
+                        <h3>Panambur Beach</h3>
+                        <p>Mangalore's most popular beach, known for its sunset views and water sports.</p>
+                        <a href="https://maps.app.goo.gl/7qiiWngSh43J1L7q7" target="_blank" class="map-link">
+                            <i data-lucide="map-pin"></i> View on Map
+                        </a>
+                    </div>
+                </div>
+
+                <div class="attraction-card beaches" data-category="beaches">
+                    <div class="attraction-img">
+                        <img src="assets/Beach/Padubidri Blue Flag Beach.jpg" alt="Blue Flag Beach Padubidri"
+                            loading="lazy">
+                    </div>
+                    <div class="attraction-info">
+                        <h3>Padubidri Blue Flag Beach</h3>
+                        <p>A pristine, eco-friendly beach with international blue flag certification.</p>
+                        <a href="https://maps.app.goo.gl/vDPvXAWFydycPdxb6" target="_blank" class="map-link">
+                            <i data-lucide="map-pin"></i> View on Map
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Temples -->
+                <div class="attraction-card temples" data-category="temples">
+                    <div class="attraction-img">
+                        <img src="assets/Temples/Kadri Manjunath Temple.jpg" alt="Kadri Manjunath Temple"
+                            loading="lazy">
+                    </div>
+                    <div class="attraction-info">
+                        <h3>Kadri Manjunath Temple</h3>
+                        <p>Ancient 10th-century temple blending Buddhist and Shaiva traditions.</p>
+                        <a href="https://maps.app.goo.gl/xRksAR5wR3ZoWwFZ9" target="_blank" class="map-link">
+                            <i data-lucide="map-pin"></i> View on Map
+                        </a>
+                    </div>
+                </div>
+
+                <div class="attraction-card temples" data-category="temples">
+                    <div class="attraction-img">
+                        <img src="assets/Temples/sri mangala devi temple.jpg" alt="Mangaladevi Temple" loading="lazy">
+                    </div>
+                    <div class="attraction-info">
+                        <h3>Mangaladevi Temple</h3>
+                        <p>The namesake temple of Mangaluru, famous for its historic architecture.</p>
+                        <a href="https://maps.app.goo.gl/38Rr31AwTCQG335z8" target="_blank" class="map-link">
+                            <i data-lucide="map-pin"></i> View on Map
+                        </a>
+                    </div>
+                </div>
+
+                <div class="attraction-card temples" data-category="temples">
+                    <div class="attraction-img">
+                        <img src="assets/Temples/Kudroli Temple.jpg" alt="Gokarnanatheshwara Temple" loading="lazy">
+                    </div>
+                    <div class="attraction-info">
+                        <h3>Kudroli Temple</h3>
+                        <p>Stunning Dravidian-style temple known for its Dasara celebrations.</p>
+                        <a href="https://maps.app.goo.gl/UdJUVgvtijCzUR7k8" target="_blank" class="map-link">
+                            <i data-lucide="map-pin"></i> View on Map
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Transit -->
+                <div class="attraction-card transit" data-category="transit">
+                    <div class="attraction-img">
+                        <img src="assets/Manglore International Airport/Airport.jpg"
+                            alt="Mangalore International Airport" loading="lazy">
+                    </div>
+                    <div class="attraction-info">
+                        <h3>International Airport</h3>
+                        <p>A short drive from your stay, connecting you to the world.</p>
+                        <a href="https://maps.app.goo.gl/UdJUVgvtijCzUR7k8" target="_blank" class="map-link">
+                            <i data-lucide="map-pin"></i> View on Map
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Markets (Simple cards for markets) -->
+                <div class="attraction-card markets" data-category="markets">
+                    <div class="attraction-info full">
+                        <h3>Bhirath Mall</h3>
+                        <p>1.5 KM | Shopping, Dining, Movies</p>
+                        <a href="https://maps.app.goo.gl/A7n4Z6n1xGv2xM8A7" target="_blank" class="map-link">
+                            <i data-lucide="map-pin"></i> View on Map
+                        </a>
+                    </div>
+                </div>
+
+                <div class="attraction-card markets" data-category="markets">
+                    <div class="attraction-info full">
+                        <h3>Bejai Market</h3>
+                        <p>1.0 KM | Local produce and essentials</p>
+                        <a href="https://maps.app.goo.gl/m7GvYxQ8zFp3f6sA8" target="_blank" class="map-link">
+                            <i data-lucide="map-pin"></i> View on Map
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="brand-font">Book Your <span>Experience</span></h2>
+            <p>Choose your preferred booking platform or contact us directly.</p>
+
+            <div class="booking-options">
+                <a href="https://www.booking.com/hotel/in/aikya.en-gb.html?aid=311984&label=aikya-XEsUfSJEdFnKxQvOhPoivwS590445265192%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-541335900123%3Alp9302750%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YXORK0YJiVoOxcWODxYDaAA&sid=af2f0ddc698f680dd6dca03b5b4ef28c&dest_id=-2103790&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771530801&srpvid=893e8bc6e13501ed&type=total&ucfs=1&"
+                    target="_blank" class="booking-card">
+                    <div class="option-icon"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/b/be/Booking.com_logo.svg"
+                            alt="Booking.com" style="width: 100px;"></div>
+                    <h4>Booking.com</h4>
+                    <p>Instant confirmation & secure payment.</p>
+                </a>
+
+                <a href="https://www.airbnb.co.in/rooms/39183757?source_impression_id=p3_1771530996_P3m0Jobu-Dyt8bwY"
+                    target="_blank" class="booking-card">
+                    <div class="option-icon"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg"
+                            alt="Airbnb" style="width: 100px;"></div>
+                    <h4>Airbnb</h4>
+                    <p>Experience the local hospitality through Airbnb.</p>
+                </a>
+
+                <a href="tel:+919845083639" class="booking-card direct">
+                    <div class="option-icon"><i data-lucide="phone-call" size="48"></i></div>
+                    <h4>Direct Booking</h4>
+                    <p>Call us for the best rates and personalized offers.</p>
+                    <span class="phone-number">+91 98450 83639</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact" style="background-color: var(--bg-main);">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo brand-font" style="color:var(--text-main)">AIKYA<span>HOME</span></div>
+                <p>Raj Home Layouts, Bejai New Road,<br>Behind MCF Housing Colony,<br>Mangalore - 575004</p>
+                <br>
+                <div class="bank-card">
+                    <h4>Bank Details</h4>
+                    <div class="bank-row"><span>Account Name:</span> <b>Aikya</b></div>
+                    <div class="bank-row"><span>Account No:</span> <b>38316894624</b></div>
+                    <div class="bank-row"><span>Bank:</span> <b>SBI (Bejai Kapikad)</b></div>
+                    <div class="bank-row"><span>IFSC:</span> <b>SBIN0040740</b></div>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Phone: +91 98450 83639</p>
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://google.com/maps/embed?pb=!1m14!1m8!1m3!1d15556.887594681211!2d74.8468005!3d12.8934483!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1fc01f8440de3a37!2sAikya%20Apartment!5e0!3m2!1sen!2sin!4v1592979720638!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aikya Service Apartments. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
