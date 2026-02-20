@@ -35,6 +35,15 @@
     border: 1px solid var(--primary-accent);
 }
 
+/* Hide custom cursor on touch devices */
+@media (hover: none) {
+
+    .cursor-dot,
+    .cursor-outline {
+        display: none !important;
+    }
+}
+
 .luxury-cursor-enabled {
     cursor: none;
 }
@@ -670,6 +679,18 @@ h4,
         margin-bottom: 25px;
     }
 
+    .hero-img-container {
+        width: 100%;
+        height: auto;
+        order: -1;
+    }
+
+    .hero-img-main {
+        width: 100% !important;
+        height: 280px !important;
+        border-radius: 20px;
+    }
+
     .hero-badge {
         position: relative;
         bottom: 0;
@@ -679,10 +700,6 @@ h4,
         padding: 8px 15px;
         font-size: 0.75rem;
         transform: translateY(-20px);
-    }
-
-    .hero-img-main {
-        height: 250px !important;
     }
 
     .hero-btns {
