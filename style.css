@@ -634,7 +634,7 @@ h4,
         gap: 8px;
     }
 
-    .btn-primary.open-booking {
+    .navbar .btn-primary.open-booking {
         padding: 8px 15px;
         font-size: 0.75rem;
     }
